@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER Section */
+
+/* NAVIGATION Section */
+
+/* CAROUSEL Section */
+
+/* PRODUCT_DISPLAY Section */
+
+.productDisplay{
+    padding: 30px;
+    /* background: linear-gradient(180deg, rgb(214, 255, 56) 0%, rgba(215, 255, 56, 0.5) 50%, rgb(215, 255, 56, 0) 100%); */
+    text-align: center;
+    margin: 0 auto;
+}
+
+.productDisplay > h1{
+    margin: 50px auto;
+    font-weight: bold;
+    font-size: 350%;
+    border: 2px solid rgb(214, 255, 56);
+    padding: 5px;
+}
+
+.productContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.productContainer > .card > img{
+    transition: transform 1s ease, border-radius 1s ease;
+}
+
+.productContainer > .card{
+    overflow: hidden;
+}
+
+.card-body.wishlist{
+    width: 100%;
+    display: none;
+    background: linear-gradient(0deg, rgb(214, 255, 56) 0%, rgb(252, 255, 238) 85.9072%, rgb(255, 255, 255) 100%);
+}
+
+.card-body.wishlist > .btn{
+    border: 2px solid rgb(214, 255, 56);
+    transition: background-color 2s ease, color 2s ease;
+}
+
+.card-body.wishlist > .btn:hover{
+    background-color: black;
+    color: rgb(214, 255, 56);
+}
+
+.card-body.productDetails{
+    margin: 10px;
+}
+
+.strikedPrice{
+    font-size: 80%;
+    color: gray;
+}
+
+.card:hover > img{
+    margin-bottom: 5px;
+    transform: scale(1.07);
+    border-radius: 0 0 38px 38px;
+}
+
+.card:hover > .productDetails
+{
+    display: none;
+}
+
+.card:hover > .wishlist{
+    display: block;
+}
+
+.shopNew{
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    border: 2px solid rgb(214, 255, 56);
+    margin: 80px auto;
+    transition: background-color 2s ease, color 2s ease;
+}
+
+.shopNew:hover{
+    background-color: black;
+    color: rgb(214, 255, 56);
+}
+
+/* FOOTER Section */
